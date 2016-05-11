@@ -181,16 +181,16 @@ while True:
 
 
 	#Convert Accelerometer values to degrees
-	AccXangle =  (math.atan2(ACCy,ACCz)+M_PI)*RAD_TO_DEG
-	AccYangle =  (math.atan2(ACCz,ACCx)+M_PI)*RAD_TO_DEG
+	AccXangle =  ACCx
+	AccYangle =  ACCy
 	
 	
 	#convert the values to -180 and +180
-	AccXangle -= 180.0
-	if AccYangle > 90:
-		AccYangle -= 270.0
-	else:
-		AccYangle += 90.0
+#	AccXangle -= 180.0
+#	if AccYangle > 90:
+#		AccYangle -= 270.0
+#	else:
+#		AccYangle += 90.0
 	
 	
 
